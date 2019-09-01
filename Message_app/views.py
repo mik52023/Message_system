@@ -34,9 +34,10 @@ def create_message_view(request):
 @require_GET
 def read_message_view(request):
     try:
+        user=request.GET["user"]
         id=request.GET["id"]
-        
-        message=WebServices.read_message(id)
+
+        message=WebServices.read_message(id,user)
         data=model_to_dict(message,exclude=('id'))
         send_data={'data':data}
         return JsonResponse(send_data)

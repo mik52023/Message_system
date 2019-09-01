@@ -27,9 +27,11 @@ def get_message(id):
     return message
 
 "recieve message_id and return message instance and change unread message stats to read"
-def read_message(id):
+def read_message(id,user):
     message=get_message(id)
-    if(message.read==False):
+    if((message.sender!=user) and (message.reciever!=user)):
+       raise UserNotAuthorized('user not allowed')
+    if(not message.read):
         message.read=True
         message.save()
 
