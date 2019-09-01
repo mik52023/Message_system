@@ -26,7 +26,7 @@ def get_message(id):
     message = Message.objects.get(id=id)
     return message
 
-"recieve message_id and return message instance and change unread message stats to read"
+"recieve message_id and user and return message instance and change unread message stats to read"
 def read_message(id,user):
     message=get_message(id)
     if((message.sender!=user) and (message.reciever!=user)):
