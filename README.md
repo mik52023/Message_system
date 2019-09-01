@@ -1,6 +1,6 @@
 "Message System API" 
 
-This is for a herolo assignment
+This is for herolo assignment
 
 
 Create Message:
@@ -9,11 +9,11 @@ Method: POST
 
 Description: send Parameters to create message.
 
-Parameters: "sender", "reciever", "subject", "content"
+Parameters: "sender":string, "reciever":string, "subject":string, "content":text area
 
 Link :https://message-system.herokuapp.com/Messaging_system/create_message/
 
-Json example:
+response example:
 
 {
 "info": "message was sent"
@@ -25,11 +25,11 @@ Method: GET
 
 Description: send user and id,receive message if found and user is reciever/sender   
 
-Parameters: “id”,"user"
+Parameters: “id”:integer ,"user":string
 
 Link :https://message-system.herokuapp.com/Messaging_system/read_message
 
-Json example:
+response example:
 
 {
     "data": {
@@ -48,11 +48,11 @@ Method: GET
 
 Description: send user,recieve all messages address to the user
 
-Parameters: "user"
+Parameters: "user":string
 
 Link :https://message-system.herokuapp.com/Messaging_system/get_messages_by_user/
 
-Json example:
+response example:
 
 {
     "data": [
@@ -77,13 +77,13 @@ Get Unread Messages By User:
 
 Method: GET
 
-Description:send id, recieve all unread messages address to the user
+Description:send user, recieve all unread messages address to the user
 
-Parameters: "user"
+Parameters: "user":string
 
 Link :https://message-system.herokuapp.com/Messaging_system/get_unread_messages_by_user/
 
-Json example:
+response example:
 
 {
     "data": [
@@ -103,11 +103,11 @@ Method GET
 
 Description:recieve id and user,Delete Message if user is sender or reciever
 
-Parameters: "id" ,"user"
+Parameters: "id":integer ,"user":string
 
 Link :https://message-system.herokuapp.com/Messaging_system/
 
-Json example:
+response example:
 {
     "info": "message was deleted"
 }
