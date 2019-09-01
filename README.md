@@ -83,7 +83,7 @@ GET UNREAD MESSAGES BY USER:
 
 Method: GET
 
-Description:send user, recieve all unread messages address to the user
+Description: send user, recieve all unread messages address to the user
 
 Parameters: "user"-string
 
@@ -109,7 +109,7 @@ DELETE MESSAGE:
 
 Method: GET
 
-Description:recieve id and user,Delete Message if user is sender or reciever
+Description: recieve id and user,Delete Message if user is sender or reciever
 
 Parameters: "id"-integer ,"user"-string
 
