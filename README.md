@@ -107,13 +107,13 @@ response example:
 
 DELETE MESSAGE:
 
-Method GET
+Method: GET
 
 Description:recieve id and user,Delete Message if user is sender or reciever
 
 Parameters: "id"-integer ,"user"-string
 
-Link :https://message-system.herokuapp.com/Messaging_system/
+Link :https://message-system.herokuapp.com/Messaging_system/delete_message/
 
 response example:
 {
