@@ -3,6 +3,7 @@
 This is for herolo assignment
 
 ------------------------------------
+
 CREATE MESSAGE:
 
 Method: POST
@@ -18,6 +19,7 @@ response example:
 {
 "info": "message was sent"
 }
+
 -----------------------
 
 READ MESSAGE:
@@ -26,7 +28,7 @@ Method: GET
 
 Description: send user and id,receive message if found and user is reciever/sender   
 
-Parameters: ìidî-integer ,"user"-string
+Parameters: ‚Äúid‚Äù-integer ,"user"-string
 
 Link :https://message-system.herokuapp.com/Messaging_system/read_message
 
@@ -74,6 +76,7 @@ response example:
         }
     ]
 }
+
 ---------------------------
 
 GET UNREAD MESSAGES BY USER:
@@ -99,6 +102,7 @@ response example:
         }
     ]
 }
+
 -----------------------
 
 DELETE MESSAGE:
